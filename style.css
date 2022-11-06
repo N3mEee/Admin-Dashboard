@@ -90,6 +90,7 @@ form {
     flex: 1;
     display: grid;
     grid-template-columns: 40px auto;
+    align-items: center;
 }
 
 .search label > svg {
@@ -98,6 +99,18 @@ form {
 
 input[type="text"] {
     width: 50%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--light);
+    border-radius: 50px;
+    padding: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 10px var(--bluedark);
+    transition: all 0.25s ease-in-out;
 }
 
 .account {
@@ -183,7 +196,7 @@ input[type="text"] {
 .sidebar-card {
     width: 300px;
     height: max-content;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--dark);
 }
 
